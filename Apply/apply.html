@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for a job</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="apply_box">
+      <h1>Cruise Ship Job Application</h1>
+      <form>
+        <div class="form_container">
+          <div class="form_control">
+            <label for="first_name">First Name</label>
+            <input id="first_name" placeholder="Enter your first name" required>
+          </div>
+          <div class="form_control">
+            <label for="last_name">Last Name</label>
+            <input id="last_name" placeholder="Enter your last name" required>
+          </div>
+          <div class="form_control">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form_control">
+            <label for="job">Job Role</label>
+            <select id="job" required>
+              <option value="">Select Job Role</option>
+              <option value="deck_officer">Deck Officer</option>
+              <option value="chef">Chef</option>
+              <option value="waiter">Waiter/Waitress</option>
+              <option value="cleaner">Cleaner</option>
+              <option value="engineer">Engineer</option>
+              <option value="bartender">Bartender</option>
+              <option value="cruise_director">Cruise Director</option>
+              <option value="guest_services">Guest Services</option>
+            </select>
+          </div>
+          <div class="textarea_control">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address" required></textarea>
+          </div>
+          <div class="form_control">
+            <label for="city">City</label>
+            <input name="city" id="city" placeholder="Enter your city" required>
+          </div>
+          <div class="form_control">
+            <label for="pincode">Pincode</label>
+            <input type="number" id="pincode" placeholder="Enter Pincode" required>
+          </div>
+          <div class="form_control">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+          </div>
+          <div class="form_control">
+            <label for="upload">Upload Your CV</label>
+            <input type="file" id="upload" name="upload" required>
+          </div>
+          <div class="form_control">
+            <label for="experience">Previous Cruise Experience</label>
+            <textarea id="experience" name="experience" rows="4" cols="50" placeholder="Describe your previous cruise experience (if any)" required></textarea>
+          </div>
+          <div class="form_control">
+            <label for="availability">Availability to Join</label>
+            <input type="date" id="availability" placeholder="Enter your availability date" required>
+          </div>
+        </div>
+        <div class="button_container">
+          <button type="submit">Apply Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
