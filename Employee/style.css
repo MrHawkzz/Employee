@@ -47,11 +47,6 @@ nav .logo-name{
     display: flex;
     align-items: center;
 }
-nav .profile-container {
-    display: flex;
-    align-items: center;
-}
-
 nav .profile-image {
     display: flex;
     justify-content: center;
@@ -64,8 +59,6 @@ nav .profile-image img {
     object-fit: cover;
     border-radius: 50%;
 }
-
-
 nav .logo-name .logo_name{
     font-size: 22px;
     font-weight: 600;
@@ -144,26 +137,6 @@ nav.close li a .link-name{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-.mode-toggle .switch{
-    position: relative;
-    display: inline-block;
-    height: 22px;
-    width: 40px;
-    border-radius: 25px;
-    background-color: var(--toggle-color);
-}
-.switch:before{
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 15px;
-    width: 15px;
-    background-color: var(--panel-color);
-    border-radius: 50%;
-    transition: var(--tran-03);
 }
 .dashboard{
     position: relative;
