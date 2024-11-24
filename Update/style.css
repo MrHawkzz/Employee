@@ -381,3 +381,150 @@ nav.close ~ .dashboard .top {
     white-space: nowrap; /* Prevent wrapping */
     color: var(--text-color); /* Default color */
 }
+
+/* Styling for the Request Shift Swap section */
+.shift-request {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shift-request form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shift-request label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.shift-request input[type="date"],
+.shift-request textarea,
+.shift-request select {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.shift-request input[type="date"]:focus,
+.shift-request textarea:focus,
+.shift-request select:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.shift-request textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.shift-request button {
+    padding: 12px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+    align-self: flex-start;
+}
+
+.shift-request button:hover {
+    background-color: #005bb5;
+}
+
+.shift-request button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Title Styling */
+#current-shift .title {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+/* Shift Card Styling */
+.shift-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Shift Info Styling */
+.shift-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.shift-info .label {
+    font-weight: bold;
+    color: #333;
+}
+
+.shift-info i {
+    color: #007bff;
+    margin-right: 8px;
+}
+
+/* Shift Status */
+.shift-status {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.shift-status .status {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.shift-status .status.in-progress {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.shift-status .status.upcoming {
+    color: #fff;
+    background-color: #007bff;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar .progress {
+    background-color: #28a745;
+    height: 100%;
+    transition: width 0.3s ease;
+}

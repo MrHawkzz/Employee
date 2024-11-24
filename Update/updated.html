@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../Update/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Employee Dashboard</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="profile-image">
+                <img src="profile.png" alt="profile">
+            </div>
+
+            <span class="logo_name">Employee Portal</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="dashboard.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-clipboard-alt"></i>
+                    <span class="link-name">Task Management</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Attendance and Payroll</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-bell"></i>
+                    <span class="link-name">Notifications</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">Support and Help</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil-user-circle"></i>
+                    <span class="link-name">Profile</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="dashboard" class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-analytics"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-clock-three"></i>
+                        <span class="text">Attendance</span>
+                        <span class="number">00</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-info-circle"></i>
+                        <span class="text">Current Shift</span>
+                        <span class="number">--</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-redo"></i>
+                        <span class="text">Upcoming Shift</span>
+                        <span class="number">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <section id="current-shift">
+                <div class="title">
+                    <i class="uil uil-clock"></i>
+                    <span class="text">Current Shift Details</span>
+                </div>
+            
+                <div class="shift-card">
+                    <div class="shift-info">
+                        <p><i class="uil uil-user"></i> <span class="label">Role:</span> Deck Manager</p>
+                        <p><i class="uil uil-location-point"></i> <span class="label">Location:</span> Deck B</p>
+                        <p><i class="uil uil-schedule"></i> <span class="label">Shift Timing:</span> 9:00 AM - 5:00 PM</p>
+                        <p><i class="uil uil-user-circle"></i> <span class="label">Supervisor:</span> John Doe</p>
+                    </div>
+            
+                    <div class="shift-status">
+                        <p class="status in-progress">In Progress</p>
+                        <!-- Optional: A visual progress bar -->
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 40%;"></div> <!-- Dynamically update progress -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+                <div class="shift-request">
+                    <div class="title">
+                        <i class="uil uil-user-check"></i>
+                        <span class="text">Request Shift Swap</span>
+                    </div>
+                    <form>
+                        <label for="shift-date">Select Shift Date:</label>
+                        <input type="date" id="shift-date" name="shift-date">
+                        
+                        <label for="swap-reason">Reason for Swap:</label>
+                        <textarea id="swap-reason" name="swap-reason" placeholder="Explain your reason for the shift swap..."></textarea>
+                        
+                        <button type="submit" id="submit-btn" disabled>Submit Request</button>
+                    </form>
+                </div>
+                
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-history"></i>
+                    <span class="text">Activity Data</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data task">
+                        <span class="data-title">Task</span>
+                        <span class="data-list">--</span>
+                    </div>
+                    <div class="data shift">
+                        <span class="data-title">Deck</span>
+                        <span class="data-list">--</span>
+                    </div>
+                    <div class="data date">
+                        <span class="data-title">Date</span>
+                        <span class="data-list">00-00-0000</span>
+                    </div>
+                    <div class="data time">
+                        <span class="data-title">Time</span>
+                        <span class="data-list">00:00</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </section>
+    <script src="../Update/script.js"></script>   
+</body>
+</html>
